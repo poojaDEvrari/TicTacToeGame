@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EB79E2">
+
+    <!-- Tic-Tac-Toe Board Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button0"  android:backgroundTint="#FDDBFD"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 1"  android:backgroundTint="#FDDBFD"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 2" android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="" android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 3" android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+
+            android:contentDescription="Button 4" android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 5" android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""  android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 6" android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="" android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 7"
+            android:backgroundTint="#FDDBFD"/>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:textColor="#3F037A"
+            android:onClick="playerTap"
+            android:contentDescription="Button 8" android:backgroundTint="#FDDBFD"/>
+
+
+
+        <!-- Repeat for all other buttons -->
+    </GridLayout>
+
+
+    <!-- Status Text to show whose turn or the result -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/gridLayout"
+        android:text="Player X's Turn"
+        android:textSize="24sp" />
+
+    <!-- Reset Button to restart the game -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusTextView"
+        android:layout_marginTop="20dp"
+        android:text="Reset Game"
+        android:onClick="resetGame" android:backgroundTint="#FDDBFD"
+        android:textColor="@color/black"/>
+</RelativeLayout>
